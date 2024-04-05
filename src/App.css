@@ -7,6 +7,7 @@ body{
 li{
   list-style: none;
 }
+
 a{
   text-decoration: none;
 }
@@ -76,6 +77,13 @@ nav ul li a:hover{
   padding: 40px 0;
 }
 
+section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header section {
 color: #EDEFEE;
 padding: 10px 13%;
@@ -94,7 +102,7 @@ h3 {
 
 .banner p {
   font-size: 20px;
-  max-width: 520px;
+  max-width: 450px;
   line-height: 1.5;
   margin-bottom: 30px;
 }
@@ -210,6 +218,10 @@ input, label{
   justify-content: space-between;
 }
 
+.heading h5{
+  font-size: 20px;
+}
+
 .orderbtn{
   padding: 5px 12px;
   margin-bottom: 20px;
@@ -221,7 +233,7 @@ footer section{
   padding: 10px 13%;
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .company-info img{
@@ -246,6 +258,22 @@ footer ul li{
   padding: 8px 0;
 }
 
+
+@media screen and (max-width: 1150px){
+  .banner-img{
+    position: absolute;
+    right: 13%;
+    top: 25%;
+    width: 320px;
+    height: 300px;
+  }
+  .banner p {
+    font-size: 20px;
+    max-width: 250px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+}
 
 @media screen and (max-width: 768px){
   .menu-icon {
